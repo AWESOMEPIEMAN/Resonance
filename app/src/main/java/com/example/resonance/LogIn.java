@@ -26,17 +26,16 @@ import com.google.android.gms.tasks.Task;
 public class LogIn extends AppCompatActivity{
 
     SignInButton signInButton;
-    private GoogleApiClient googleApiClient;
-    private static final int RC_SIGN_IN = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button b = (Button) findViewById(R.id.sign_in_button);
+        Button signInButton = findViewById(R.id.sign_in_button);
 
-        b.setOnClickListener(new View.OnClickListener() {
+        signInButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(LogIn.this, MainActivity.class);
                 startActivity(intent);
