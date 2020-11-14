@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ScrollView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="229dp">
+        android:layout_height="wrap_content">
     <ProgressBar
         android:visibility="gone"
         android:id="@+id/progressBar"
@@ -99,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="5sp"
-        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view" />
+        app:layout_constraintTop_toBottomOf="@+id/message" />
     <EditText
         android:id="@+id/message"
         android:layout_width="290sp"
@@ -112,7 +112,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:id="@+id/description4"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            android:text=""/>
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/main_group"
@@ -123,8 +135,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="5sp"
         app:layout_constraintTop_toBottomOf="@+id/uploadBtn2"
-        app:layout_constraintStart_toStartOf="parent"
-/>
-    </ScrollView>
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
