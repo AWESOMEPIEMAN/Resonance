@@ -6,18 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.resonance.LogIn;
-import com.example.resonance.MainActivity;
+import com.example.resonance.LandingScreen;
 import com.example.resonance.R;
-import com.google.android.gms.common.SignInButton;
 
 public class LogoutFragment extends Fragment {
     private LogoutViewModel logoutViewModel;
@@ -32,7 +27,7 @@ public class LogoutFragment extends Fragment {
 
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), LogIn.class);
+                Intent intent = new Intent(getContext(), LandingScreen.class);
                 startActivity(intent);
             }
         });

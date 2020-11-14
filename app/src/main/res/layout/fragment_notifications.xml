@@ -22,11 +22,11 @@
         android:id="@+id/imageUpload"
         android:layout_width="290sp"
         android:layout_height="43sp"
-        android:layout_marginTop="5dp"
         android:background="#7AECECEC"
         android:backgroundTint="#B6B2B2"
         android:gravity="center|center_horizontal|center_vertical"
         android:text=""
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,6 @@
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="205sp"
-
         android:layout_marginTop="5sp"
         app:autoPlay="false"
         app:showFullScreenButton="false"
@@ -64,8 +63,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="2sp"
         app:layout_constraintTop_toBottomOf="@+id/uploadBtn" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.resonance.ui.notifications.NotificationsFragment"
+        android:layout_width="274dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="5sp"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/youtube_player_view"
+        app:layout_constraintStart_toStartOf="@+id/youtube_player_view"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
