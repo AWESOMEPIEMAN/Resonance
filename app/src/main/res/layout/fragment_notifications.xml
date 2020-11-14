@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/imageUpload"
+        android:layout_width="290sp"
+        android:layout_height="43sp"
+        android:layout_marginTop="5dp"
+        android:background="#7AECECEC"
+        android:backgroundTint="#B6B2B2"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/sendbtn"
+        android:text="@string/receive"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageUpload"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageUpload"
+        app:layout_constraintTop_toBottomOf="@+id/imageUpload" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="205sp"
+
+        android:layout_marginTop="5sp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:layout_constraintTop_toBottomOf="@+id/uploadBtn"
+        tools:layout_editor_absoluteX="0sp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/main_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageUpload,uploadBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/uploadBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

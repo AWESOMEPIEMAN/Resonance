@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Resonance</string>
+    <string name="server_client_id">510879454537-ctj97pcv4sp98ve5vkeiv5asjng9da7b.apps.googleusercontent.com</string>
+    <string name="app">Resonance</string>
+    <string name="title_home">Home</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_add_friend">Add Friend</string>
+    <string name="title_menu">Logout</string>
+    <string name="addfriend">Connect</string>
+    <string name="addpic">Send a Picture</string>
+    <string name="send">Send</string>
+    <string name="log_out">Log Out</string>
+    <string name="share">Type the song name here</string>
+    <string name="upload">Search</string>
+    <string name="create_post">Send a song</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="receive">Receive a song</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_dashboard">Send</string>
+    <string name="title_notifications">Gifts</string>
+    <string name="title_logout">Logout</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="todo">TODO</string>
+    <string name="_2">2</string>
+    <string name="tram_nguyen">Tram Nguyen</string>
+    <string name="you_are_awesome">You are awesome!</string>
+    <string name="you_will_kill_it_today">You will kill it today!</string>
+    <string name="have_a_great_day">Have a great day!</string>
+</resources>
