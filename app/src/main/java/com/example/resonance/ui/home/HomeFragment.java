@@ -34,8 +34,8 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     String videoId="uj3nFNIV2jY";
-    String videoId2="Msl2fl3h59I";
-    String videoId3="mk48xRzuNvA";
+    String videoId2="mk48xRzuNvA";
+    String videoId3="Msl2fl3h59I";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
