@@ -1,5 +1,6 @@
 package com.example.resonance.ui.notifications;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -48,11 +49,13 @@ public class NotificationsFragment extends Fragment{
         else {text = "Call Me Maybe";};
 
         View v = inflater.inflate(R.layout.fragment_notifications, container, false);
-        TextView videoname = (TextView) v.findViewById(R.id.imageUpload);
+        TextView locationname = (TextView) v.findViewById(R.id.From);
         Button b = (Button) v.findViewById(R.id.uploadBtn);
+        TextView videoname = (TextView) v.findViewById(R.id.imageUpload);
         YouTubePlayerView youTubePlayerView = v.findViewById(R.id.youtube_player_view);
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                locationname.setText(R.string.locationname);
                 Log.d("BUTTONWTF","YouTube button worked");
 
                 getLifecycle().addObserver(youTubePlayerView);
