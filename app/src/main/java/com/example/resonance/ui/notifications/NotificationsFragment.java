@@ -31,7 +31,7 @@ import java.util.concurrent.CountDownLatch;
 public class NotificationsFragment extends Fragment{
     private String text = "";
     private NotificationsViewModel notificationsViewModel;
-    private  String BASE_URL = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAgl_tVAk1eyfsSfDOI-RPF8kiEerOVKhY&part=snippet,id&order=viewCount&maxResults=1&q=";
+    private  String BASE_URL = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyB__QWCc6YSXgmv9FKs6BCfngsKhA_Tr0I&part=snippet,id&order=viewCount&maxResults=1&q=";
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         final int random = new Random().nextInt(9) +1;
